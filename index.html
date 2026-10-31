@@ -34,7 +34,17 @@
 <div class="kicker" data-he="קלאסיקה, כנות וחיבור אנושי" data-en="CLASSIC CHARM · HONEST CONNECTION">קלאסיקה, כנות וחיבור אנושי</div>
 <h1 data-he="לא חייבים<br><span>לעשות הכול לבד.</span>" data-en="You don't have to<br><span>do it all alone.</span>">לא חייבים<br><span>לעשות הכול לבד.</span></h1>
 <p data-he="בן לוויה לדייט, לאירוע, לטיול או לערב נעים. גם עזרה יומיומית, שיחה טובה ופרטנר אמין — הכול בתיאום אישי ובכבוד הדדי." data-en="A companion for a date, event, hike, or relaxed evening. Everyday help, good conversation, and reliable company—with clear expectations and mutual respect.">בן לוויה לדייט, לאירוע, לטיול או לערב נעים. גם עזרה יומיומית, שיחה טובה ופרטנר אמין — הכול בתיאום אישי ובכבוד הדדי.</p>
-<div class="buttons"><a class="btn" href="#contact" data-he="בואי נדבר" data-en="Let's talk">בואי נדבר</a><a class="btn outline" href="#services" data-he="לכל השירותים" data-en="Explore services">לכל השירותים</a></div>
+<div class="buttons">
+  <a class="btn" href="#contact">בואי נדבר</a>
+
+  <a class="btn outline"
+     href="https://wa.me/972587446266"
+     target="_blank" rel="noopener">WhatsApp</a>
+
+  <a class="btn outline"
+     href="https://t.me/wolfyil"
+     target="_blank" rel="noopener">Telegram</a>
+</div>
 <div class="trust"><span data-he="יחס אישי ודיסקרטי" data-en="Personal and discreet">יחס אישי ודיסקרטי</span><span data-he="תיאום ציפיות מראש" data-en="Clear expectations">תיאום ציפיות מראש</span><span data-he="אזור המרכז — בתיאום" data-en="Central Israel — by arrangement">אזור המרכז — בתיאום</span></div>
 </div></div></section>
 <section class="section services" id="services"><div class="wrap"><div class="head"><div class="eyebrow" data-he="השירותים שלי" data-en="HOW I CAN HELP">השירותים שלי</div><h2 data-he="שישה שירותים, הרבה אפשרויות" data-en="Six services, plenty of possibilities">שישה שירותים, הרבה אפשרויות</h2><p data-he="מחפשת חבר להשכרה, בן לוויה או פשוט מישהו שיעזור? בוחרים יחד מה מתאים לך." data-en="Looking for a boyfriend-for-hire style companion, a plus-one, or an extra pair of hands? We'll agree on what suits you.">מחפשת חבר להשכרה, בן לוויה או פשוט מישהו שיעזור? בוחרים יחד מה מתאים לך.</p></div>
@@ -74,7 +84,8 @@ function setLang(lang){
 }
 document.getElementById('heBtn').addEventListener('click',()=>setLang('he'));
 document.getElementById('enBtn').addEventListener('click',()=>setLang('en'));
-const WHATSAPP_NUMBER = ''; // Add country code and digits only, e.g. 9725XXXXXXXX
+const WHATSAPP_NUMBER = '972587442666'; // Add country code and digits only, e.g. 9725XXXXXXXX
+const TELEGRAM_USERNAME = 'wolfyil';
 document.getElementById('booking-form').addEventListener('submit',e=>{
  e.preventDefault();const lang=document.documentElement.lang;
  const val=id=>document.getElementById(id).value.trim();
@@ -84,5 +95,5 @@ document.getElementById('booking-form').addEventListener('submit',e=>{
  window.open('https://wa.me/'+WHATSAPP_NUMBER.replace(/\D/g,'')+'?text='+encodeURIComponent(msg),'_blank','noopener');
 });
 </script>
-</body></html>
+</body>
 </html>
