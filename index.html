@@ -93,7 +93,7 @@ document.getElementById('booking-form').addEventListener('submit',e=>{
  const msg=lang==='he'?`שלום, אשמח לקבל פרטים על שירות.\nשם: ${val('name')}\nיצירת קשר: ${val('contact-method')}\nשירות: ${service}\nמועד: ${val('date')||'גמיש'}\nפרטים: ${val('details')||'לא צוינו'}`:`Hello, I'd like to ask about a service.\nName: ${val('name')}\nContact: ${val('contact-method')}\nService: ${service}\nPreferred time: ${val('date')||'Flexible'}\nDetails: ${val('details')||'Not provided'}`;
  if(!WHATSAPP_NUMBER.trim()){alert(lang==='he'?'יש להגדיר מספר וואטסאפ בקוד האתר לפני שליחת ההודעה. הפרטים לא נשלחו.':'Set the WhatsApp number in the site code before sending. Your details have not been sent.');return;}
  window.open('https://wa.me/'+WHATSAPP_NUMBER.replace(/\D/g,'')+'?text='+encodeURIComponent(msg),'_blank','noopener');
-});
+  });
 </script>
 </body>
 </html>
